@@ -75,6 +75,11 @@
     strong {
       font-weight: normal;
     }
+    h2{
+      background: #ff6600;
+      padding: 8px;
+      color: #fff;
+    }
 
     h3,
     h4,
@@ -117,8 +122,21 @@
     .projects>ol>li>header {
       display: flex;
       justify-content: space-between;
+      border-bottom: 1px solid #df7f2e;
+      background: #f3f3f3;
+      padding: 4px;
+      margin-left: 10px;
     }
-
+    .projects>ol>li>div{
+      display: flex;
+      flex-direction: row;
+      margin-left: 10px;
+    }
+    .projects>ol>li>div>img{
+      width: 120px;
+      height: 120px;
+      margin-top: 15px;
+    }
     .projects>ol>li h3 {
       display: inline-block;
     }
@@ -274,28 +292,56 @@
     <ol>
       <li>
         <header>
+          <h3>米老鼠CSS</h3>
+
+          <span>
+              <a href="#">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+        </header>
+        <div>
+          <img class="projects-img" src="/index.html" alt="预览图">
+          <div>
+            <p>
+              纯<strong>CSS</strong>  项目。
+
+            </p>
+            <p>
+              制作过程让我对 <strong>CSS</strong> 有了新的认识。
+              我将其总结成了一篇博客《CSS浅析》。
+            </p>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <header>
           <h3>Rain UI</h3>
           <span>
               <a href="#">源码链接</a>
               <a href="#">项目预览</a>
             </span>
         </header>
-        <p>
-          一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
+        <div>
+          <img class="projects-img" src="/index.html" alt="预览图">
+          <div><p>
+            一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
 
-        </p>
-        <p>
-          主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
+          </p>
+            <p>
+              主要组件有<strong>按钮</strong>、<strong>文本</strong>、等。
 
-        </p>
-        <p>
-         提高了我的开发效率
+            </p>
+            <p>
+              提高了我的开发效率
 
-        </p>
-        <p>
-          制作过程让我对 TypeScript 和单元测试有了新的认识。
-          我将其总结成了一篇博客《TS 泛型的使用》。
-        </p>
+            </p>
+            <p>
+              制作过程让我对 TypeScript 和单元测试有了新的认识。
+              我将其总结成了一篇博客《TS 泛型的使用》。
+            </p></div>
+
+        </div>
       </li>
       <li>
         <header>
@@ -305,12 +351,19 @@
               <a href="#">项目预览</a>
             </span>
         </header>
-        <p>
-          这是一个基于 <strong>js</strong> 和 <strong>React</strong> 的多页面应用。
-        </p>
-        <p>
-          画板，能够画线，圆，改变颜色，以及增加图层。是一个简易的画板，方便使用，可以保存。
-        </p>
+        <div>
+          <img class="projects-img" src="/index.html" alt="预览图">
+          <div>
+            <p>
+              这是一个基于 <strong>js</strong> 和 <strong>React</strong> 的多页面应用。
+            </p>
+            <p>
+              画板，能够画线，圆，改变颜色，以及增加图层。是一个简易的画板，方便使用，可以保存。
+            </p>
+          </div>
+
+        </div>
+
       </li>
       <li>
         <header>
@@ -320,17 +373,24 @@
               <a href="#">项目预览</a>
             </span>
         </header>
-        <p>
-          一个基于 <strong>React</strong> / <strong>TypeScript</strong><strong>Router</strong> 的移动端单页面应用。
-        </p>
+        <div>
+          <img class="projects-img" src="/index.html" alt="预览图">
+          <div>
+            <p>
+              一个基于 <strong>React</strong> / <strong>TypeScript</strong><strong>Router</strong> 的移动端单页面应用。
+            </p>
 
-        <p>
-          这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-          而且可以通过图表查看自己的消费习惯。
-        </p>
-        <p>
-          该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
-        </p>
+            <p>
+              这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+              而且可以通过图表查看自己的消费习惯。
+            </p>
+            <p>
+              该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
+            </p>
+          </div>
+
+        </div>
+
       </li>
       <li>
         <header>
@@ -340,34 +400,35 @@
               <a href="#">项目预览</a>
             </span>
         </header>
-        <p>
-          一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
-        </p>
+        <div>
+          <img class="projects-img" src="/index.html" alt="预览图">
+          <div>
+            <p>
+              一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+            </p>
 
-        <p>
-          这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-          而且可以通过图表查看自己的消费习惯。
-        </p>
-        <p>
-          该项目大量使用 --- ，让我对 --- 有了深刻的理解和应用。
-        </p>
+            <p>
+              这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
+              而且可以通过图表查看自己的消费习惯。
+            </p>
+            <p>
+              该项目大量使用 --- ，让我对 --- 有了深刻的理解和应用。
+            </p>
+          </div>
+        </div>
       </li>
       <li>
         <header>
           <h3>Rain-DOM 库</h3>
           <a href="#">源码链接</a>
         </header>
-        <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
-      </li>
-      <li class="page2">
-        <header>
-          <h3>会动的哆啦A梦</h3>
-          <span>
-              <a href="#">源码链接</a>
-              <a href="https://fangyinghang.com/make-a-pikachu/">项目预览</a>
-            </span>
-        </header>
-        <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>
+        <div>
+          <img class="projects-img" src="/index.html" alt="预览图">
+          <div>
+            <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
+
+          </div>
+        </div>
       </li>
       <li>
         <header>
@@ -377,7 +438,14 @@
               <a href="#">项目预览</a>
             </span>
         </header>
-        <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+        <div>
+          <img class="projects-img" src="/index.html" alt="预览图">
+          <div>
+            <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+
+          </div>
+        </div>
+
       </li>
     </ol>
   </section>
@@ -390,13 +458,13 @@
     <h2>技能</h2>
     <div>
       <ul>
-        <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
-        <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-        <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-        <li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>
-        <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
-        <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-        <li>了解 <strong>Webpack 的配置和优化</strong></li>
+        <li>css 熟悉页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
+        <li>js 熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
+        <li>vue 熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+        <li>react 熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>
+        <li>ea6 熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+        <li>typescript 了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+        <li>webpack 了解 <strong>Webpack 的配置和优化</strong></li>
       </ul>
     </div>
   </section>
@@ -404,8 +472,8 @@
   <section class="others">
     <h2>其他链接</h2>
     <ul>
-      <li><a href="https://www.zhihu.com/people/zhihusucks/posts/posts_by_votes">我的博客</a>，目前已有 21 篇技术文章</li>
-      <li><a href="https://github.com/frankfang">我的 GitHub</a>，过去三个月有 200 次提交</li>
+      <li><a href="#">我的博客</a>，目前已有  篇技术文章</li>
+      <li><a href="#">我的 GitHub</a>，过去三个月有  次提交</li>
     </ul>
   </section>
 
