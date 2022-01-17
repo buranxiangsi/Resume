@@ -68,7 +68,7 @@
     a {
       color: #999;
       text-decoration: none;
-      border-bottom: 1px solid;
+      /*border-bottom: 1px solid;*/
     }
 
     p,
@@ -80,9 +80,7 @@
       font-weight: normal;
     }
     h2{
-      background: #ff6600;
-      padding: 8px;
-      color: #fff;
+      color: #333333;
     }
 
     h3,
@@ -104,6 +102,9 @@
   </style>
 
   <style>
+     .bio p{
+        padding-bottom: 5px;
+      }
     .projects {}
 
     .projects p {
@@ -128,25 +129,37 @@
     .projects>ol>li>header {
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid #df7f2e;
-      background: #f3f3f3;
-      padding: 4px;
-      margin-left: 10px;
     }
 
     .projects>ol>li>div{
       display: flex;
-      flex-direction: row;
-      margin-left: 10px;
+      flex-direction: column;
     }
     .projects>ol>li>div>img{
-      width: 120px;
-      height: 120px;
+      margin: auto;
+      border: 1px dashed #eee;
+      width: 700px;
+      height: 300px;
       margin-top: 15px;
       margin-right: 20px;
     }
     .projects>ol>li h3 {
       display: inline-block;
+      color: black;
+    }
+    .projects .show{
+       margin-top: 10px;
+      display: flex;
+      flex-flow: row;
+    }
+    .projects .show > a{
+      color: #333333;
+      font-weight: bold;
+      padding-bottom: 5px;
+      width:20%;
+    }
+    .projects .show > a:hover {
+      color: #ff6600;
     }
   
   </style>
@@ -185,6 +198,9 @@
     .skills>.wrapper>ul>li {
       line-height: 1.2;
       margin-bottom: 8px;
+    }
+    .skills >ul >li{
+      margin-left: 10px;
     }
   </style>
   <style>
@@ -261,6 +277,7 @@
       .bio img {
         display: none;
       }
+     
 
       .skills .wrapper {
         flex-direction: column;
@@ -285,18 +302,13 @@
 <article>
   <section class="bio">
     <h1>罗玲玉</h1>
-    <!-- <img src="#" alt="" width="100" height="100"> -->
     <p>
-      女 | 26岁 | 前端开发工程师 | 长沙
+     性别：女 |年龄：26|学历：大专|意向岗位：前端开发|到岗时间：月内到岗
     </p>
     <p>
-      手机：13789060033 | 微信：13789060033 | 邮箱：1324013683@qq.com
+      手机：13789060033  |  微信：13789060033 |  邮箱：1324013683@qq.com
     </p>
   </section>
-
-
-
-
 
 
   <section class="projects">
@@ -304,44 +316,17 @@
     <ol>
       <li>
         <header>
-          <h3>米老鼠CSS</h3>
+          <h3>1. 雨滴UI-Vue</h3>
 
-          <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
-            </span>
         </header>
         <div>
-          <img  class="projects-img" src="./img/12.png" alt="预览图"/>
-          <div>
-            <p>
-
-              纯<strong>CSS</strong>  小项目。
-
-            </p>
-            <p>
-              制作过程让我对 <strong>CSS</strong> 有了新的认识。
-            </p>
-          </div>
-
-        </div>
-      </li>
-      <li>
-        <header>
-          <h3>雨滴UI-Vue</h3>
-          <span>
-              <a href="#">源码链接</a>
-              <a href="#">项目预览</a>
-            </span>
-        </header>
-        <div>
-          <img class="projects-img" src="" alt="预览图"/>
+          <img class="projects-img" src="./img/1.png" alt="预览图"/>
           <div><p>
             一款基于 <strong>Vue</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
 
           </p>
             <p>
-              主要组件有<strong>按钮</strong>、<strong>输入框</strong> <strong>标签</strong>等。
+              主要组件有<strong>按钮</strong>、<strong>文本</strong>、<strong>标签</strong>等。
 
             </p>
             <p>
@@ -349,39 +334,60 @@
 
             </p>
             <p>
-              制作过程让我对 TypeScript 和Vue有了新的认识。
+
+            </p></div>
+
+        </div>
+        <div class="show">
+          <a href="https://github.com/buranxiangsi/rainUi-1/tree/main">源码链接</a>
+          <a href="https://buranxiangsi.github.io/rainUi-1/#/">项目预览</a>
+        </div>
+      </li>
+      <li>
+        <header>
+          <h3>2. 米老鼠CSS</h3>
+        </header>
+        <div>
+          <img class="projects-img" src="./img/milaoshu.png" alt="预览图"/>
+          <div>
+            <p>
+              <strong>HTML</strong>/<strong>CSS</strong>  结合，采用绝对定位与相对定位
+
+            </p>
+            <p>
+              制作过程让我对 <strong>HTML</strong>/<strong>CSS</strong> 有了新的认识。
             </p>
           </div>
 
         </div>
+        <div class="show">
+          <a href="https://github.com/buranxiangsi/mickey-mouse">源码链接</a>
+          <a href="https://buranxiangsi.github.io/mickey-mouse/src/index.html">项目预览</a>
+        </div>
       </li>
-<!--      <li>-->
-<!--        <header>-->
-<!--          <h3>Rain-记账-React</h3>-->
-<!--          <span>-->
-<!--              <a href="#">源码私有</a>-->
-<!--              <a href="#">项目预览</a>-->
-<!--            </span>-->
-<!--        </header>-->
-<!--        <div>-->
-<!--          <img class="projects-img" src="" alt="预览图"/>-->
-<!--          <div>-->
-<!--            <p>-->
-<!--              一个基于 <strong>React</strong> / <strong>TypeScript</strong><strong>Router</strong> 的移动端单页面应用。-->
-<!--            </p>-->
+      <li>
+        <header>
+          <h3>3. 基于git的个人博客</h3>
+        </header>
+        <div>
+          <img class="projects-img" src="" alt="预览图"/>
+          <div>
+            <p>
+              <strong>HTML</strong>/<strong>CSS</strong>  结合，采用绝对定位与相对定位
 
-<!--            <p>-->
-<!--              这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，-->
-<!--              而且可以通过图表查看自己的消费习惯。-->
-<!--            </p>-->
-<!--            <p>-->
-<!--              该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。-->
-<!--            </p>-->
-<!--          </div>-->
+            </p>
+            <p>
+              制作过程让我对 <strong>HTML</strong>/<strong>CSS</strong> 有了新的认识。
+            </p>
+          </div>
 
-<!--        </div>-->
-
-<!--      </li>-->
+        </div>
+        <div class="show">
+          <a href="">源码链接</a>
+          <a href="">项目预览</a>
+        </div>
+      </li>
+  
     </ol>
   </section>
 
@@ -391,35 +397,31 @@
 
   <section>
     <h2>技能</h2>
-    <div >
+    <div class="skills" >
       <ul>
-        <li>熟悉 HTML HTMl5 合理构建网页</li>
-        <li>熟悉 CSS CSS3 美化网页</li>
-        <li>熟悉 JavaScript Es6 TypeScript </li>
-        <li>熟悉 Vue 构建Vue项目</li>
-        <!-- <li>React</li> -->
-        <!-- <li>Es6</li> -->
-        <!-- <li>TypeScript</li> -->
-        <li>熟悉 Webpack 打包工具</li>
+        <li>熟悉HTML，HTML5,能够构建网页</li>
+        <li>熟悉CSS，CSS3，优化网页</li>
+        <li>熟悉JavaScript，Es6，TypeScript</li>
+        <li>熟悉Vue，制作Vue小项目 </li>
+        <li>熟悉Webpack打包工具</li>
       </ul>
     </div>
   </section>
 
-  <!-- <section class="others">
-    <h2>其他链接</h2>
-    <ul>
-      <li><a href="#">我的博客</a></li>
-      <li><a href="#">我的 GitHub</a> 其他项目以及练习</li>
-    </ul>
-  </section> -->
-
+<!--  <section class="others">-->
+<!--    <h2>其他链接</h2>-->
+<!--    <ul>-->
+<!--      <li><a href="#">我的博客</a>，目前已有  篇技术文章</li>-->
+<!--      <li><a href="#">我的 GitHub</a>，过去三个月有  次提交</li>-->
+<!--    </ul>-->
+<!--  </section>-->
+<!-- 
   <section class="education">
-    <h2>教育经历</h2>
+    <h2>教育</h2>
     <p>
       大专
-      <!-- <span><time>年</time>~<time>年</time></span> -->
     </p>
-  </section>
+  </section> -->
 
 </article>
 <script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
